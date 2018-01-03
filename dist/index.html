@@ -8,68 +8,417 @@
 	<!--<![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="/Users/shaan/html-email-boilerplate/src/styles.css" />
 	<!--[if (gte mso 9)|(IE)]><style type="text/css">table {border-collapse: collapse;}</style><![endif]-->
 	<!--[if gte mso 15]><style type="text/css" media="all">tr {font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;}</style><![endif]-->
 	<!--[if gte mso 15]><style type="text/css" media="all">body {font-size: 0; line-height: 0; }tr {mso-margin-top-alt:1px;}</style><![endif]-->
+	<style type="text/css">
+		*,
+		*:after,
+		*:before {
+			-webkit-box-sizing: inherit;
+			box-sizing: inherit;
+		}
+
+		html {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			background: #F5F5F5;
+			color: #444444;
+			font-size: 14px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			line-height: 22px;
+			margin: 0 !important;
+			padding: 0;
+		}
+
+		table {
+			border-collapse: separate;
+			border-spacing: 0;
+			color: #666666;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+			line-height: 22px;
+			width: 100%;
+		}
+
+		th {
+			color: #004466;
+			font-weight: bold;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			max-width: 100%;
+		}
+
+		a {
+			color: #FFAA00;
+			display: inline-block;
+			padding: 0;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			-webkit-text-decoration-skip: ink;
+			text-decoration-skip: ink;
+		}
+
+		div>a {
+			color: #666666;
+			text-decoration: none;
+			padding: 0
+		}
+
+		div>a:hover {
+			opacity: 0.6;
+			text-decoration: none;
+		}
+
+		a.button {
+			padding: 12px 32px;
+			display: inline-block;
+			background-color: #FFBB00;
+			color: #222222;
+			font-weight: 600;
+			border-radius: 4px;
+			border: none;
+			text-decoration: none;
+		}
+
+		a.button:hover {
+			background-color: #FFCC33;
+			text-decoration: none;
+		}
+
+		a.button:active {
+			background-color: #FFAA00;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		.wrapper {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			background-color: #F5F5F5;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.webkit {
+			margin: 0 auto;
+			max-width: 600px;
+			background: #FFFFFF;
+			border-radius: 2px;
+		}
+
+		/*fasfasf*/
+
+		#outlook a {
+			padding: 0;
+		}
+
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.ExternalClass {
+			width: 100%;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height: 100%;
+		}
+
+		#backgroundTable {
+			margin: 0;
+			padding: 0;
+			width: 100% !important;
+			line-height: 100% !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			-ms-interpolation-mode: bicubic;
+		}
+
+		a img {
+			border: none;
+		}
+
+		.image_fix {
+			display: block;
+		}
+
+		p {
+			margin: 1em 0;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #000000;
+		}
+
+		h1 a,
+		h2 a,
+		h3 a,
+		h4 a,
+		h5 a,
+		h6 a {
+			color: blue !important;
+		}
+
+		h1 a:active,
+		h2 a:active,
+		h3 a:active,
+		h4 a:active,
+		h5 a:active,
+		h6 a:active {
+			color: red !important;
+		}
+
+		h1 a:visited,
+		h2 a:visited,
+		h3 a:visited,
+		h4 a:visited,
+		h5 a:visited,
+		h6 a:visited {
+			color: purple !important;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		@media only screen and (max-device-width: 480px) {
+			a[href^="tel"],
+			a[href^="sms"] {
+				text-decoration: none;
+				color: black;
+				pointer-events: none;
+				cursor: default;
+			}
+			.mobile_link a[href^="tel"],
+			.mobile_link a[href^="sms"] {
+				-webkit-text-decoration: default;
+				text-decoration: default;
+				color: orange !important;
+				pointer-events: auto;
+				cursor: default;
+			}
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			a[href^="tel"],
+			a[href^="sms"] {
+				text-decoration: none;
+				color: #FFAA00;
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {}
+
+		@media only screen and (-webkit-device-pixel-ratio:.75) {}
+
+		@media only screen and (-webkit-device-pixel-ratio:1) {}
+
+		@media only screen and (-webkit-device-pixel-ratio:1.5) {}
+	</style>
 </head>
 
-<body>
-	<center class="wrapper">
-		<div class="webkit">
-			<table id="main">
-				<tr>
-					<td colspan="3"><img src="https://privacdn.com/godigit/policybazaar-logo.svg" alt="PolicyBazaar" width="180" /></td>
-					<td colspan="3"><strong>Toll Free</strong> 1800-258-5970</td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-				</tr>
-				<tr>
-					<td colspan="6"></td>
-				</tr>
-				<tr>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-					<td colspan="2"></td>
-				</tr>
-			</table>
-		</div>
-	</center>
+<body style="background-color: #F5F5F5;" bgcolor="#F5F5F5">
+	<table style="display: none !important;visibility: hidden;mso-hide: all;font-size: 1px;color: #FFFFFF;line-height: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;">
+		<tr style="display: none !important;visibility: hidden;mso-hide: all;font-size: 1px;color: #FFFFFF;line-height: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;">
+			<td style="display: none !important;visibility: hidden;mso-hide: all;font-size: 1px;color: #FFFFFF;line-height: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;">This month, we have added Digit Insurance, a company that has innovated to solve four big concerns people have when they buy car insurance.</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background-color: #F5F5F5;" bgcolor="#F5F5F5">
+		<tr>
+			<td align="center" valign="top">
+				<table>
+					<tr>
+						<td height="30" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;">&nbsp;</td>
+					</tr>
+				</table>
+				<table border="0" cellpadding="10" cellspacing="0" width="600" style="background-color: #FFFFFF; width: 600px; max-width: 600px" bgcolor="#FFFFFF">
+					<tr>
+						<td align="center" valign="top">
+							<table width="540px" style="margin: auto; max-width: 540px;">
+								<tr>
+									<td height="30" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="3" align="left"><a href="https://policybazaar.com/" target="_blank" rel="nofollow noreferrer noopener"><img src="https://privacdn.com/godigit/policybazaar-logo.svg" alt="PolicyBazaar" width="180" /></a></td>
+									<td colspan="3" align="right"><span style="font-weight: 500; color: #444444; ">Toll Free</span> <a href="tel:1800-258-5970" target="_blank" rel="nofollow noreferrer noopener">1800&#xa0;258&#xa0;5970</a></td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="color: #EEEEEE;background-color: #EEEEEE;height: 1px;border: none;" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<p>Hi <span style="text-transform: capitalize;">$customerName</span>,</p>
+										<p>We are very fond of you which is why we keep trying to give you better products and experiences. This month, we have added Digit Insurance, a company that has innovated to solve four big concerns people have when they buy car insurance.</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="color: #EEEEEE;background-color: #EEEEEE;height: 1px;border: none;" />
+									</td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<th colspan="6">
+										<h2 style="font-size: 15px; color: #004466; font-weight: bold;">Feel like a VIP with us</h2>
+									</th>
+								</tr>
+								<tr style="vertical-align: text-top;">
+									<td align="center" colspan="2" width="33%"><img src="https://privacdn.com/godigit/policybazaar/vip-care.svg" alt="" width="116" />
+										<h4>VIP Care</h4>
+										<p>Pick up, repair &#x26; drop of your vehicle at the time of your claim.</p>
+									</td>
+									<td align="center" colspan="2" width="33%"><img src="https://privacdn.com/godigit/policybazaar/daily-conveyance-benefit.svg" alt="" width="96" />
+										<h4>Daily Conveyance Benefit</h4>
+										<p>Inbuilt daily conveyance benefit, after claims assessment upto 3 days.</p>
+									</td>
+									<td align="center" colspan="2" width="33%"><img src="https://privacdn.com/godigit/policybazaar/breakdown-assistance-rsa.svg" alt="" width="96" />
+										<h4>Breakdown Assistance</h4>
+										<p>Inbuilt Roadside Assistance (RSA) service with extensive benefits designed for a hassle-free experience.</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="color: #EEEEEE;background-color: #EEEEEE;height: 1px;border: none;" />
+									</td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="6" align="center">
+										<p>Hope you&#x2019;ll agree that this is a great addition to the products we offer you. <strong>Click on the link below</strong> to check quotes from Digit and also other companies.</p>
+									</td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="6" align="center"><a href="https://godigit.com/" class="button" target="_blank" rel="noreferrer nofollow noopener">See Quotes</a></td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="color: #EEEEEE;background-color: #EEEEEE;height: 1px;border: none;" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<p>Thanks $customerName<br /><span style="font-weight: 500;">P.S.</span> If you wish to know more about the company Digit, you can have a read here:</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" width="33%" style="vertical-align:top;">
+										<div class="card" style="border: 1px solid #DDDDDD; border-radius: 4px; background: #FFFFFF; padding: 14px; margin: 8px; 4px">
+											<a style="color: #777777;" href="http://mybs.in/2UZVufW/" target="_blank" rel="noreferrer nofollow noopener" title="Read this story on Business Standard">
+												<h4 style="margin: 0;">Digit plans synergy with Fairfax to beat competition</h4>
+												<p style="margin-bottom: 0;	font-size: 13px;">Prem Watsa-led Fairfax Financial has invested about $5 billion… Read More</p><img style="margin-top: 12px;" src="https://privacdn.com/godigit/policybazaar/business-standard.svg" alt="Business Standarda" width="102" /></a>
+										</div>
+									</td>
+									<td colspan="2" width="33%" style="vertical-align:top;">
+										<div class="card" style="border: 1px solid #DDDDDD; border-radius: 4px; background: #FFFFFF; padding: 14px; margin: 8px; 4px">
+											<a style="color: #777777;" href="http://toi.in/UkK9iY64/a24gk/" target="_blank" rel="noreferrer nofollow noopener" title="Read this story on Times Of India">
+												<h4 style="margin: 0;">New age insurer Digit gets final nod from IRDAI</h4>
+												<p style="margin-bottom: 0;	font-size: 13px;">New-age non-life insurer Digit Insurance has received the… Read More</p><img style="margin-top: 12px;" src="https://privacdn.com/godigit/policybazaar/times-of-india.svg" alt="Times Of India" width="30" /></a>
+										</div>
+									</td>
+									<td colspan="2" width="33%" style="vertical-align:top;">
+										<div class="card" style="border: 1px solid #DDDDDD; border-radius: 4px; background: #FFFFFF; padding: 14px; margin: 8px; 4px">
+											<a style="color: #777777;" href="http://ecoti.in/R0TM6a/" target="_blank" rel="noreferrer nofollow noopener" title="Read this story on The Economic Times">
+												<h4 style="margin: 0;">Fairfax floats another JV in general insurance</h4>
+												<p style="margin-bottom: 0;	font-size: 13px;">Prem Watsa&#x2019;s Fairfax Holdings is bullish on India and more so… Read more</p><img style="margin-top: 12px;" src="https://privacdn.com/godigit/policybazaar/the-economic-times.svg" alt="The Economic Times" width="102" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td height="10" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="color: #EEEEEE;background-color: #EEEEEE;height: 1px;border: none;" />
+									</td>
+								</tr>
+								<tr>
+									<td height="10" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="2" width="33.33%">
+										<p style="font-size: 13px;"><span style="font-weight: 500; color: #444444;">Website</span> <a href="https://godigit.com/" target="_blank" rel="noreferrer nofollow noopener" title="Visit GoDigit Website">www.godigit.com</a></p>
+									</td>
+									<td align="center" colspan="2" width="33.33%">
+										<p style="font-size: 13px;"><span style="font-weight: 500; color: #444444;">Email</span> <a href="mailto:hello@godigit.com" target="_blank" rel="noreferrer nofollow noopener" title="Email us your enquiries">hello@godigit.com</a></p>
+									</td>
+									<td align="center" colspan="2" width="33.33%">
+										<p style="font-size: 13px;"><span style="font-weight: 500; color: #444444;">Toll Free No.</span> <a href="tel:1800-232-65331" target="_blank" rel="nofollow noreferrer noopener">1800&#xa0;232&#xa0;65331</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td height="20" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;" colspan="6">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td height="30" style="font-size: 0; line-height: 0; mso-line-height-rule: exactly;">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
 
 </html>
