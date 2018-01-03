@@ -1,5 +1,5 @@
 ![XDMailer](https://privacdn.com/godigit/xdmailer-hero.png)
-# XDMailer
+# XDMailer: Responsive Email Framework for Digit Insurance
 [![GitHub release](https://img.shields.io/github/release/digitdesign/xdmailer.svg)]() [![Github commits (since latest release)](https://img.shields.io/github/commits-since/digitdesign/xdmailer/latest.svg)]() [![GitHub last commit](https://img.shields.io/github/last-commit/digitdesign/xdmailer.svg)]() [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/digitdesign/xdmailer.svg)]() [![GitHub top language](https://img.shields.io/github/languages/top/digitdesign/xdmailer.svg)]() [![GitHub issues](https://img.shields.io/github/issues/digitdesign/xdmailer.svg)]() [![license](https://img.shields.io/github/license/digitdesign/xdmailer.svg)]()
 > XDMailer is a future-proof HTML5 email framework designed to work across (almost) all email clients while retaining the desired visual language. For more information visit the [XDMailer Website](https://digitxd.com/mailer/).
 
