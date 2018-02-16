@@ -1,15 +1,12 @@
 /*OKOKOKOKOKOKOKOK*/
-.sample
-{
+.sample {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-	margin: 0px;
-	color: #ffffff;
-	
-	
-	
-	
-	
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin: 0;
+	color: #FFF;
 }

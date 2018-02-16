@@ -35,5 +35,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-csscomb');
 
 	/*Default task*/
-	grunt.registerTask('default', ['autoprefixer']);
+	grunt.registerTask('default', ['autoprefixer', 'csscomb']);
 };
