@@ -1,7 +1,7 @@
 <div align="center">
-	<img src="https://privacdn.com/godigit/xdmailer/img/digit-xd-mailer-framework.svg" width="64" alt="Digit XD Mailer">
-	<h3 align="center">Digit XDMailer</h3>
-	<p align="center">XDMailer is a future-proof HTML email framework designed to work across all modern email clients.</p>
+	<img src="https://privacdn.com/godigit/xdmailer/img/digit-xd-mailer-framework.svg" width="94" alt="Digit XD Mailer">
+	<h3 align="center">XDMailer</h3>
+	<p align="center">XDMailer is a future-proof HTML email framework, designed by Digit Insurance, to work across all modern email clients.</p>
 	<p align="center"><a href="https://github.com/digitdesign/xdmailer/releases/latest"><img src="https://img.shields.io/github/release/digitdesign/xdmailer.svg" alt=""></a> <a href="https://github.com/digitdesign/xdmailer/find/master"><img src="https://img.shields.io/github/repo-size/digitdesign/xdmailer.svg" alt=""></a> <a href="https://github.com/digitdesign/xdmailer/search?l=css"><img src="https://img.shields.io/github/languages/top/digitdesign/xdmailer.svg" alt=""></a></p>
 </div>
 <br />
