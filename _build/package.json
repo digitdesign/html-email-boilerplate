@@ -2,12 +2,14 @@
 	"name": "xdmailer",
 	"version": "1.0.0",
 	"devDependencies": {
-		"grunt": "~1.0.2",
+		"graceful-fs": "^4.1.11",
+		"grunt": "^0.4.5",
 		"grunt-autoprefixer": "^3.0.4",
 		"grunt-contrib-cssmin": "^2.2.1",
 		"grunt-csscomb": "^3.1.1",
 		"grunt-inline": "^0.3.6",
-		"grunt-postcss": "^0.9.0"
+		"grunt-postcss": "^0.9.0",
+		"minimatch": "^3.0.4"
 	},
 	"description": "XDMailer is a future-proof HTML5 email framework designed to work across (almost) all email clients while retaining the desired visual language.",
 	"main": "index.js",
