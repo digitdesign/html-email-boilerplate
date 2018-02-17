@@ -29,6 +29,9 @@ module.exports = function (grunt) {
 			},
 		},
 		cssmin: {
+			options: {
+				mergeIntoShorthands: false
+			},
 			target: {
 				files: [{
 					expand: true,
@@ -44,7 +47,6 @@ module.exports = function (grunt) {
 				cwd: '<%= meta.srcPath %>',
 				src: '*.html',
 				dest: '<%= meta.deployPath %>'
-
 			},
 		},
 	});
@@ -56,5 +58,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-inline');
 
 	/*Default task*/
-	grunt.registerTask('default', ['autoprefixer', 'csscomb']);
+	grunt.registerTask('default', [
+		'autoprefixer',
+		'csscomb',
+		'cssmin'
+	]);
 };
