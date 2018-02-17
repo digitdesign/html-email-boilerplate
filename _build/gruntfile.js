@@ -30,8 +30,7 @@ module.exports = function (grunt) {
 		},
 		cssmin: {
 			options: {
-				shorthand: true,
-				'vendor-prefix': true
+				shorthand: true
 			},
 			my_target: {
 				expand: true,
@@ -41,25 +40,44 @@ module.exports = function (grunt) {
 			}
 		},
 		inline: {
-			dist: {
+			options: {
+
+			},
+			files: {
 				expand: true,
 				cwd: '<%= meta.srcPath %>',
 				src: '*.html',
 				dest: '<%= meta.deployPath %>'
 			},
 		},
+		htmlmin: {
+			options: {
+				removeComments: true,
+				collapseWhitespace: true
+			},
+			files: {
+				expand: true,
+				cwd: '<%= meta.srcPath %>',
+				src: '*.html',
+				dest: '<%= meta.deployPath %>'
+			}
+		}
 	});
 
 	/*Tasks*/
+	grunt.loadNpmTasks('grunt-css');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-csscomb');
 	grunt.loadNpmTasks('grunt-inline');
-	grunt.loadNpmTasks('grunt-css');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
 	/*Default task*/
-	grunt.registerTask('default', [
+	grunt.registerTask(
+		'default', [
 		'autoprefixer',
 		'csscomb',
-		'cssmin'
+		'cssmin',
+		'inline',
+		'htmlmin'
 	]);
 };
