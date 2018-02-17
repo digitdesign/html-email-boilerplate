@@ -40,7 +40,11 @@ module.exports = function (grunt) {
 		},
 		inline: {
 			dist: {
-				src: '../src/index.html'
+				expand: true,
+				cwd: '<%= meta.srcPath %>',
+				src: '*.html',
+				dest: '<%= meta.deployPath %>'
+
 			},
 		},
 	});
