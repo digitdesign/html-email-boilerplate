@@ -30,16 +30,15 @@ module.exports = function (grunt) {
 		},
 		cssmin: {
 			options: {
-				mergeIntoShorthands: false
+				shorthand: true,
+				'vendor-prefix': true
 			},
-			target: {
-				files: [{
-					expand: true,
-					cwd: '<%= meta.srcPath %>css/',
-					src: '*.css',
-					dest: '<%= meta.deployPath %>css/'
-    }],
-			},
+			my_target: {
+				expand: true,
+				cwd: '<%= meta.srcPath %>css/',
+				src: '*.css',
+				dest: '<%= meta.deployPath %>css/'
+			}
 		},
 		inline: {
 			dist: {
@@ -54,8 +53,8 @@ module.exports = function (grunt) {
 	/*Tasks*/
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-csscomb');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-inline');
+	grunt.loadNpmTasks('grunt-css');
 
 	/*Default task*/
 	grunt.registerTask('default', [
