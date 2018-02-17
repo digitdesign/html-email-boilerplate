@@ -56,5 +56,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-inline');
 
 	/*Default task*/
-	grunt.registerTask('default', ['autoprefixer', 'csscomb', 'cssmin', 'inline']);
+	grunt.registerTask('default', ['autoprefixer', 'csscomb']);
 };
