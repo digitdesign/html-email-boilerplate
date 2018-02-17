@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 				cwd: '<%= meta.srcPath %>css/',
 				src: '*.css',
 				dest: '<%= meta.deployPath %>css/'
-			}
+			},
 		},
 		csscomb: {
 			options: {
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 				cwd: '<%= meta.srcPath %>css/',
 				src: '*.css',
 				dest: '<%= meta.deployPath %>css/'
-			}
+			},
 		},
 		cssmin: {
 			target: {
@@ -35,16 +35,22 @@ module.exports = function (grunt) {
 					cwd: '<%= meta.srcPath %>css/',
 					src: '*.css',
 					dest: '<%= meta.deployPath %>css/'
-    }]
-			}
-		}
+    }],
+			},
+		},
+		inline: {
+			dist: {
+				src: '../src/index.html'
+			},
+		},
 	});
 
 	/*Tasks*/
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-csscomb');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-inline');
 
 	/*Default task*/
-	grunt.registerTask('default', ['autoprefixer', 'csscomb', 'cssmin']);
+	grunt.registerTask('default', ['autoprefixer', 'csscomb', 'cssmin', 'inline']);
 };

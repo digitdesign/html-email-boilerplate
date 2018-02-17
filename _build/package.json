@@ -6,6 +6,7 @@
 		"grunt-autoprefixer": "^3.0.4",
 		"grunt-contrib-cssmin": "^2.2.1",
 		"grunt-csscomb": "^3.1.1",
+		"grunt-inline": "^0.3.6",
 		"grunt-postcss": "^0.9.0"
 	},
 	"description": "XDMailer is a future-proof HTML5 email framework designed to work across (almost) all email clients while retaining the desired visual language.",
