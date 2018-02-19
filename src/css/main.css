@@ -1,15 +1,12 @@
-/*THIS IS A CSS COMMENT*/
-
-table {
-display: flex;
-	margin: 0px;
-				flex-direction: column;
-	
-	color: #ffffff;
-	
-	
-	
+table#preheader * {
+	display: none !important;
+	visibility: hidden;
+	mso-hide: all;
+	font-size: 1px;
+	color: #FFFFFF;
+	line-height: 1px;
+	max-height: 0px;
+	max-width: 0px;
+	opacity: 0;
+	overflow: hidden;
 }
-
-/*@AUTHOR: SHAAN SHIVANANDAN*/
-/*@AUTHOR: MY PHONE NUMBER IS +91 9945577255*/

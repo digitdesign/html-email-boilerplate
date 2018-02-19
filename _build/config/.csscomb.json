@@ -3,10 +3,10 @@
 	"always-semicolon": true,
 	"color-case": "upper",
 	"block-indent": "\t",
-	"color-shorthand": true,
+	"color-shorthand": false,
 	"element-case": "lower",
 	"eof-newline": true,
-	"leading-zero": false,
+	"leading-zero": true,
 	"quotes": "double",
 	"sort-order-fallback": "abc",
 	"sort-order": [
@@ -290,6 +290,6 @@
 	"space-before-selector-delimiter": "",
 	"space-before-closing-brace": "\n",
 	"strip-spaces": true,
-	"unitless-zero": true,
-	"vendor-prefix-align": false
+	"unitless-zero": false,
+	"vendor-prefix-align": true
 }

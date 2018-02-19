@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 		},
 		cssmin: {
 			options: {
-				shorthand: true
+				shorthand: false
 			},
 			my_target: {
 				expand: true,
