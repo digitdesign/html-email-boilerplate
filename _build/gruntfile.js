@@ -35,12 +35,11 @@ module.exports = function (grunt) {
 				dest: '<%= meta.deployPath %>css/'
 			}
 		},
-		inline: {
+		processhtml: {
 			dist: {
-				expand: true,
-				cwd: '<%= meta.srcPath %>',
-				src: '*.html',
-				dest: '<%= meta.deployPath %>'
+				files: {
+					'../dist/index.html': ['../src/index.html']
+				}
 			}
 		},
 		htmlmin: {
@@ -50,7 +49,7 @@ module.exports = function (grunt) {
 			},
 			files: {
 				expand: true,
-				cwd: '<%= meta.deployPath %>',
+				cwd: '<%= meta.srcPath %>',
 				src: '*.html',
 				dest: '<%= meta.deployPath %>'
 			}
@@ -59,12 +58,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-css');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-csscomb');
-	grunt.loadNpmTasks('grunt-inline');
+	grunt.loadNpmTasks('grunt-processhtml');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.registerTask('default', [
 		'autoprefixer',
 		'csscomb',
-		'cssmin',
-		'inline',
-		'htmlmin']);
+		'processhtml']);
 };

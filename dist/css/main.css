@@ -1,1 +1,13 @@
-table#preheader *{display:none!important;max-width:0;max-height:0;overflow:hidden;color:#FFF;font-size:1px;line-height:1px;opacity:0;visibility:hidden;mso-hide:all}
+table#preheader * {
+	display: none !important;
+	max-width: 0px;
+	max-height: 0px;
+	overflow: hidden;
+	color: #FFFFFF;
+	font-size: 1px;
+	line-height: 1px;
+	opacity: 0;
+	visibility: hidden;
+
+	mso-hide: all;
+}
