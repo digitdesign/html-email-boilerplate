@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 			},
 			dynamic_mappings: {
 				expand: true,
-				cwd: '<%= meta.srcPath %>css/',
+				cwd: '<%= meta.deployPath %>css/',
 				src: '*.css',
 				dest: '<%= meta.deployPath %>css/'
 			}
@@ -30,13 +30,13 @@ module.exports = function (grunt) {
 			},
 			my_target: {
 				expand: true,
-				cwd: '<%= meta.srcPath %>css/',
+				cwd: '<%= meta.deployPath %>css/',
 				src: '*.css',
 				dest: '<%= meta.deployPath %>css/'
 			}
 		},
 		inline: {
-			files: {
+			dist: {
 				expand: true,
 				cwd: '<%= meta.srcPath %>',
 				src: '*.html',
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
 			},
 			files: {
 				expand: true,
-				cwd: '<%= meta.srcPath %>',
+				cwd: '<%= meta.deployPath %>',
 				src: '*.html',
 				dest: '<%= meta.deployPath %>'
 			}
@@ -61,5 +61,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-csscomb');
 	grunt.loadNpmTasks('grunt-inline');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.registerTask('default', ['autoprefixer', 'csscomb', 'cssmin', 'inline', 'htmlmin']);
+	grunt.registerTask('default', [
+		'autoprefixer',
+		'csscomb',
+		'cssmin',
+		'inline',
+		'htmlmin']);
 };
